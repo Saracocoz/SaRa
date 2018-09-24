@@ -101,7 +101,7 @@
         <nav class="navbar navbar-expand-lg g-py-0">
           <div class="container g-pos-rel">
             <!-- Logo -->
-            <a href="../index.ejs" class="u-header__logo"
+            <a href="/" class="u-header__logo"
                data-type="static">
               <img class="u-header__logo-img u-header__logo-img--main g-width-90" style="width:80px;height:80px;" src="../assets/img/logo/logo.jpg" alt="Image description">
               <img class="u-header__logo-img g-width-90" style="width:80px;height:80px;" src="../assets/img/logo/logo.jpg" alt="Image description">
@@ -112,16 +112,16 @@
             <div class="collapse navbar-collapse align-items-center flex-sm-row " id="navBar" data-mobile-scroll-hide="true">
               <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-15 g-pt-20 g-pt-0--lg ml-auto">
                 <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg">
-                  <b href="../index.ejs" class="nav-link p-0 g-color-blue"> <%=_('menu1')%> <span class="sr-only">(current)</span></b>
+                  <a href="/" class="nav-link p-0 g-color-blue--hover"> <%=__('menu1')%> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="about.html" class="nav-link p-0 g-color-blue--hover"> <%=_('menu2')%> </a>
+                  <a href="/about" class="nav-link p-0 g-color-blue--hover"> <%=__('menu2')%> </a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="Services.html" class="nav-link p-0 g-color-blue--hover"> <%=_('menu3')%> </a>
+                  <a href="/Services" class="nav-link p-0 g-color-blue--hover"> <%=__('menu3')%> </a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="contact.html" class="nav-link p-0 g-color-blue--hover"> <%=_('menu4')%> </a>
+                  <b href="#!" class="nav-link p-0 g-color-blue"> <%=__('menu4')%> </b>
                 </li>
               </ul>
             </div>
@@ -153,8 +153,8 @@
       <div class="row g-mb-20">
         <div class="col-lg-6 g-mb-50">
           <!-- Heading -->
-          <h2 class="h1 g-color-black g-font-weight-700 mb-4"> <%=_('contact_title')%> </h2>
-          <p class="g-font-size-18 mb-0"> <%=_('contact_sub')%> </p>
+          <h2 class="h1 g-color-black g-font-weight-700 mb-4"> <%=__('contact_title')%> </h2>
+          <p class="g-font-size-18 mb-0"> <%=__('contact_sub')%> </p>
           <!-- End Heading -->
         </div>
         <div class="col-lg-3 align-self-end ml-auto g-mb-50">
@@ -165,7 +165,7 @@
                 </span>
             </div>
             <div class="media-body align-self-center">
-              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=_('phone_text')%> </h3>
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=__('phone_text')%> </h3>
               <p class="mb-0">+32 (0) 333 444 555</p>
             </div>
           </div>
@@ -179,7 +179,7 @@
                 </span>
             </div>
             <div class="media-body align-self-center">
-              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=_('email_text')%> </h3>
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=__('email_text')%> </h3>
               <p class="mb-0">htmlstream@support.com</p>
             </div>
           </div>
@@ -193,36 +193,36 @@
 
             <div class="row">
               <div class="col-md-6 form-group g-mb-20">
-                <label class="g-color-gray-dark-v2 g-font-size-13"> <%=_('form_name')%> </label>
-                <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="<%=_('form_field1')%>" name="name">
+                <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_name')%> </label>
+                <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="<%=__('form_field1')%>" name="name">
               </div>
 
               <div class="col-md-6 form-group g-mb-20">
-                <label class="g-color-gray-dark-v2 g-font-size-13"> <%=_('form_lastname')%> </label>
-                <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="<%=_('form_field2')%>" name="lastname">
+                <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_lastname')%> </label>
+                <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="text" placeholder="<%=__('form_field2')%>" name="lastname">
               </div>
             </div>
 
             <div class="g-mb-20 form-group">
-              <label class="g-color-gray-dark-v2 g-font-size-13"> <%=_('form_mail')%> </label>
-              <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="email" placeholder="<%=_('form_field3')%>" name="email">
+              <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_mail')%> </label>
+              <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="email" placeholder="<%=__('form_field3')%>" name="email">
             </div>
 
             <div class="g-mb-20 form-group">
-              <label class="g-color-gray-dark-v2 g-font-size-13"> <%=_('form_phone')%> </label>
+              <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_phone')%> </label>
               <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="+ (01) 222 33 44" name="phone">
             </div>
 
         </div>
         <div class="col-md-7">
           <div class="g-mb-40 form-group">
-            <label class="g-color-gray-dark-v2 g-font-size-13"> <%=_('form_msg')%> </label>
-            <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="12" placeholder="<%=_('form_field4')%>" name="msg"></textarea>
+            <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_msg')%> </label>
+            <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="12" placeholder="<%=__('form_field4')%>" name="msg"></textarea>
           </div>
 
 
           <div class="text-right">
-            <button class="btn u-btn-blue g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" type="submit" role="button"> <%=_('form_send')%> </button>
+            <button class="btn u-btn-blue g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35" type="submit" role="button"> <%=__('form_send')%> </button>
           </div>
         </div>
       </div>

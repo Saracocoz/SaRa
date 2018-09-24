@@ -71,7 +71,7 @@
                       <li class="list-inline-item g-mx-4 g-mt-10">
                         <i class="fa fa-globe g-font-size-14 g-mr-3"></i>
                         <a href="#!" id="languages-dropdown-invoker-2" class="g-color-white g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2"
-                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">EN
+                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut"> <%=__('language')%>
                     </a>
                         <ul id="languages-dropdown-2" class="list-unstyled g-pos-abs g-left-0 g-bg-black g-width-160 g-pb-5 g-mt-14" aria-labelledby="languages-dropdown-invoker-2">
                           <li>
@@ -86,6 +86,7 @@
                           <li>
                             <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">German</a>
                           </li>
+
                         </ul>
                       </li>
                     </ul>
@@ -115,13 +116,13 @@
                   <b href="#!" class="nav-link p-0 g-color-blue"> <%=__('menu1')%> <span class="sr-only">(current)</span></b>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="pages/about.ejs" class="nav-link p-0 g-color-blue--hover"> <%=__('menu2')%> </a>
+                  <a href="/about" class="nav-link p-0 g-color-blue--hover"> <%=__('menu2')%> </a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="pages/Services.ejs" class="nav-link p-0 g-color-blue--hover"> <%=__('menu3')%> </a>
+                  <a href="/Services" class="nav-link p-0 g-color-blue--hover"> <%=__('menu3')%> </a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="pages/contact" class="nav-link p-0 g-color-blue--hover"> <%=__('menu4')%> </a>
+                  <a href="/contact" class="nav-link p-0 g-color-blue--hover"> <%=__('menu4')%> </a>
                 </li>
               </ul>
             </div>
@@ -155,8 +156,8 @@
           <span class="g-color-blue">tax</span> and
           <span class="g-color-blue">accounting</span> services
         </h2>
-        <p class="g-hidden-xs-down g-max-width-645 g-color-white-opacity-0_9 mx-auto g-mb-35">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized.</p>
-        <a class="btn btn-lg u-btn-blue g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="#!">View Presentation</a>
+        <p class="g-hidden-xs-down g-max-width-645 g-color-white-opacity-0_9 mx-auto g-mb-35"> <%=__('home_sub')%> </p>
+        <a class="btn btn-lg u-btn-blue g-font-weight-700 g-font-size-12 text-uppercase g-rounded-50 g-px-40 g-py-15" href="/contact"> <%=__('home_buttom')%> </a>
       </div>
     </div>
     <!-- End Promo Block -->
@@ -166,7 +167,7 @@
       <!-- Heading -->
       <div class="g-max-width-550 text-center mx-auto g-mb-100">
         <div class="d-inline-block g-width-60 g-height-2 g-bg-secondary-light-v1 mb-3"></div>
-        <h2 class="h3">Our end to end suite includes Customer Support, Responsiveness, 1610+ Ui Elements and more.</h2>
+        <h2 class="h3"> <%=__('home_introduction')%> </h2>
       </div>
       <!-- End Heading -->
 
@@ -187,9 +188,9 @@
             </div>
             <h3 class="g-color-blue g-font-weight-600 g-font-size-17 text-uppercase mb-3">
               <span class="g-color-main g-font-weight-700">01.</span>
-              Consult
+              <%=__('home_step1')%>
             </h3>
-            <p>We aim high at being focused on building relationships with our clients and community.</p>
+            <p> <%=__('home_step1_info')%> </p>
           </div>
           <!-- End Icon Blocks -->
         </li>
@@ -209,9 +210,9 @@
             </div>
             <h3 class="g-color-blue g-font-weight-600 g-font-size-17 text-uppercase mb-3">
               <span class="g-color-main g-font-weight-700">02.</span>
-              Create
+              <%=__('home_step2')%>
             </h3>
-            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            <p> <%=__('home_step2_info')%> </p>
           </div>
           <!-- End Icon Blocks -->
         </li>
@@ -231,9 +232,9 @@
             </div>
             <h3 class="g-color-blue g-font-weight-600 g-font-size-17 text-uppercase mb-3">
               <span class="g-color-main g-font-weight-700">03.</span>
-              Release
+              <%=__('home_step3')%>
             </h3>
-            <p>At the end of the day, it's important to not let being busy distract us from having fun.</p>
+            <p> <%=__('home_step3_info')%> </p>
           </div>
           <!-- End Icon Blocks -->
         </li>
@@ -469,7 +470,9 @@
       $.HSCore.components.HSHeader.init($('#js-header'));
       $.HSCore.helpers.HSHamburgers.init('.hamburger');
     });
+
   </script>
+
 </body>
 
 </html>

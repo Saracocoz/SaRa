@@ -55,6 +55,18 @@ app.get('/en', function(req, res) {
     res.render('index');
 });
 
+app.get('/contact', function(req, res) {
+    res.render('pages/contact');
+});
+
+app.get('/about', function(req, res) {
+    res.render('pages/about');
+});
+
+app.get('/Services', function(req, res) {
+    res.render('pages/Services');
+});
+
 app.get('/it', function(req, res) {
     req.setLocale('it');
     res.render('index');
