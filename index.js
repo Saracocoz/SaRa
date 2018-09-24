@@ -15,7 +15,7 @@ var i18n = require("i18n");
 ////////////////// APP.USE //////////////////
 /////////////////////////////////////////////
 
-let public_dir = "/html/one-pages/palazzoalfeo";
+let public_dir = "/html";
 app.use(express.static(__dirname + public_dir));
 app.use(express.static("html"));
 
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // view engine setup
-app.set('views', "html/one-pages/palazzoalfeo");
+app.set('views', "html");
 app.set('view engine', 'ejs');
 
 i18n.configure({
@@ -89,9 +89,9 @@ app.post('/contactForm', function(req, res) {
     // setup e-mail data with unicode symbols
     var mailOptions = {
         from: req.body.phone, // sender address
-        to: "palazzoalfeo@gmail.com", // list of receivers
-        subject: "Massaggio da palazzoalfeo.it", // Subject line
-        html: '<p><b>Nome</b>: ' + req.body.name + ' <br> <b>Email</b>: ' + req.body.phone +' <br> <b>Date</b>: ' + req.body.dates +' <br> <b>Messaggio</b>: ' + messaggio + '<p> <p>Mail generata da palazzoalfeo.it</p>'
+        to: "sara.cocozza.95@gmail.com", // list of receivers
+        subject: "Massaggio da SaRa.it", // Subject line
+        html: '<p><b>Nome</b>: ' + req.body.name + ' <br> <b>Email</b>: ' + req.body.email +' <br> <b>Phone</b>: ' + req.body.phone +' <br> <b>Messaggio</b>: ' + messaggio + '<p> <p>Mail generata da SaRa.it</p>'
     };
 
     // send mail with defined transport object
