@@ -71,14 +71,14 @@
                       <li class="list-inline-item g-mx-4 g-mt-10">
                         <i class="fa fa-globe g-font-size-14 g-mr-3"></i>
                         <a href="#!" id="languages-dropdown-invoker-2" class="g-color-white g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2"
-                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">EN
+                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut"><%=__('lingua')%>
                     </a>
                         <ul id="languages-dropdown-2" class="list-unstyled g-pos-abs g-left-0 g-bg-black g-width-160 g-pb-5 g-mt-14" aria-labelledby="languages-dropdown-invoker-2">
                           <li>
-                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">English</a>
+                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="/<%=__('language')%>">English</a>
                           </li>
                           <li>
-                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Spanish</a>
+                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="/<%=__('language')%>">Italiano</a>
                           </li>
                           <li>
                             <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Russian</a>
@@ -165,10 +165,10 @@
     <!-- Contact Form -->
     <section class="container g-py-45">
       <div class="row g-mb-20">
-        <div class="col-lg-6 g-mb-50">
+        <div class="col-lg-3 g-mb-50">
           <!-- Heading -->
-          <h2 class="h1 g-color-black g-font-weight-700 mb-4"> <%=__('contact_title')%> </h2>
-          <p class="g-font-size-18 mb-0"> <%=__('contact_sub')%> </p>
+          <h2 class="h1 g-color-black g-font-weight-700 mb-4"> CONTACT US </h2>
+          <p class="g-font-size-18 mb-0"> You will be contacted and forwarded in our reality  </p>
           <!-- End Heading -->
         </div>
         <div class="col-lg-3 align-self-end ml-auto g-mb-50">
@@ -179,8 +179,21 @@
                 </span>
             </div>
             <div class="media-body align-self-center">
-              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=__('phone_text')%> </h3>
-              <p class="mb-0">+32 (0) 333 444 555</p>
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> Office number </h3>
+              <p class="mb-0">+34 930 130237 <br> <a style="color:white"> a </a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 align-self-end ml-auto g-mb-50">
+          <div class="media">
+            <div class="d-flex align-self-center">
+              <span class="u-icon-v2 u-icon-size--sm g-color-white g-bg-blue rounded-circle mr-3">
+                  <i class="g-font-size-16 icon-communication-033 u-line-icon-pro"></i>
+                </span>
+            </div>
+            <div class="media-body align-self-center">
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> Personal number </h3>
+              <p class="mb-0">+34 651 850803<br> <a style="color:white"> a </a></p>
             </div>
           </div>
         </div>
@@ -189,12 +202,12 @@
           <div class="media">
             <div class="d-flex align-self-center">
               <span class="u-icon-v2 u-icon-size--sm g-color-white g-bg-blue rounded-circle mr-3">
-                  <i class="g-font-size-16 icon-communication-062 u-line-icon-pro"></i>
+                  <i class="g-font-size-16 icon-real-estate-006 u-line-icon-pro"></i>
                 </span>
             </div>
             <div class="media-body align-self-center">
-              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=__('email_text')%> </h3>
-              <p class="mb-0">htmlstream@support.com</p>
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0">  <%=__('email_text')%> </h3>
+              <p class="mb-0">Rambla de Cataluña 105 <br>Barcelona, Spagna</p>
             </div>
           </div>
         </div>
@@ -243,12 +256,11 @@
     </fieldset>
 
 
-<span class="u-icon-v4 u-icon-v4-rounded-50x u-icon-v4-bg-blue g-mr-15 g-mb-15">
     <div class="message">
       <i class="rounded-x fa fa-check"></i>
       <p><%=__('form_submitted')%></p>
     </div>
-    </span>
+
     </form>
     </section>
     <!-- End Contact Form -->

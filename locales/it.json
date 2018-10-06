@@ -1,11 +1,11 @@
 {
 	"title": "Sa.Ra Holding trust",
-	"lingua": "ENGLISH",
+	"lingua": "ITA",
 	"menu1": "Home",
 	"menu2": "About",
 	"menu3": "Services",
 	"menu4": "Contact us",
-	"language": "IT",
+	"language": "EN",
 
 	"home_title": "Palazzo Alfeo, Welcome",
 	"home_sub": "This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized.",
@@ -56,7 +56,7 @@
 	"phone_text": "phone numbers",
 	"address_text": "address",
 
-	"contact_title": "What are you waiting for?",
+	"contact_title": "Che cosa state aspettando?",
 	"contact_sub": "We are a creative studio focusing on culture, luxury, editorial & art. Somewhere between sophistication and simplicity.",
 	"phone_text": "PHONE NUMBER",
 	"email_text": "OUR OFFICE",
