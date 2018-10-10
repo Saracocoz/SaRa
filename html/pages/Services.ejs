@@ -71,14 +71,14 @@
                       <li class="list-inline-item g-mx-4 g-mt-10">
                         <i class="fa fa-globe g-font-size-14 g-mr-3"></i>
                         <a href="#!" id="languages-dropdown-invoker-2" class="g-color-white g-text-underline--none--hover" aria-controls="languages-dropdown-2" aria-haspopup="true" aria-expanded="false" data-dropdown-event="click" data-dropdown-target="#languages-dropdown-2"
-                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">EN
+                        data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-hide-on-scroll="false" data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut"><%=__('language')%>
                     </a>
                         <ul id="languages-dropdown-2" class="list-unstyled g-pos-abs g-left-0 g-bg-black g-width-160 g-pb-5 g-mt-14" aria-labelledby="languages-dropdown-invoker-2">
                           <li>
-                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">English</a>
+                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="/Services/<%=__('language')%>">English</a>
                           </li>
                           <li>
-                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Spanish</a>
+                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="/Services/<%=__('language')%>">Italiano</a>
                           </li>
                           <li>
                             <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Russian</a>
@@ -101,7 +101,7 @@
            <nav class="navbar navbar-expand-lg g-py-0">
              <div class="container g-pos-rel">
                <!-- Logo -->
-               <a href="/" class="navbar-brand u-header__logo"
+               <a href="/<%=__('language')%>" class="navbar-brand u-header__logo"
                   data-type="static">
                  <img class="u-header__logo-img u-header__logo-img--main g-width-90" src="../assets/img/logo/logo.jpg" style="width:80px;height:50px;" alt="Image description">
                  <img class="u-header__logo-img g-width-90" style="width:80px;height:50px;" src="../assets/img/logo/logo.jpg" alt="Image description">
@@ -112,16 +112,16 @@
             <div class="collapse navbar-collapse align-items-center flex-sm-row " id="navBar" data-mobile-scroll-hide="true">
               <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-15 g-pt-20 g-pt-0--lg ml-auto">
                 <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="/" class="nav-link p-0 g-color-blue--hover">Home </a>
+                  <a href="/<%=__('language')%>" class="nav-link p-0 g-color-blue--hover">Home </a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="/about" class="nav-link p-0 g-color-blue--hover">About</a>
+                  <a href="/about/<%=__('language')%>" class="nav-link p-0 g-color-blue--hover">About</a>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                   <b href="#!" class="nav-link p-0 g-color-blue">Services</b>
                 </li>
                 <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                  <a href="/contact" class="nav-link p-0 g-color-blue--hover">Contact us</a>
+                  <a href="/contact/<%=__('language')%>" class="nav-link p-0 g-color-blue--hover">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -250,13 +250,13 @@
         <!-- Heading -->
         <div class="g-max-width-800 text-center mx-auto g-mb-70">
           <h2 class="text-uppercase g-color-main-light-v1 g-font-weight-600 g-font-size-22 g-letter-spacing-2 mb-4">Do you want to work with us?</h2>
-          <h2 class="h3 mb-5">Do you think you have people interested in our services?<br> Contact us in the <a href="/contact"> contacts form <a> <br><br>You will be contacted and forwarded in our reality so as to see if we can help each other!</h2>
+          <h2 class="h3 mb-5">Do you think you have people interested in our services?<br> Contact us in the <a href="/contact/<%=__('language')%>"> contacts form <a> <br><br>You will be contacted and forwarded in our reality so as to see if we can help each other!</h2>
         </div>
         <!-- End Heading -->
 
 
         <div class="text-center">
-          <a class="btn u-btn-outline-blue g-font-weight-600 g-font-size-12 g-rounded-30 g-py-15 g-px-35" href="/contact">Contact us now</a>
+          <a class="btn u-btn-outline-blue g-font-weight-600 g-font-size-12 g-rounded-30 g-py-15 g-px-35" href="/contact/<%=__('language')%>">Contact us now</a>
         </div>
       </div>
     </div>
@@ -287,20 +287,20 @@
                 <ul class="list-unstyled g-mt-minus-10 mb-0">
                   <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-20">
                     <h4 class="h6 g-pr-20 mb-0">
-                  <a class="g-color-white-opacity-0_8 " href="/about">About Us</a>
-                  <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/about"></i>
+                  <a class="g-color-white-opacity-0_8 " href="/about/<%=__('language')%>">About Us</a>
+                  <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/about/<%=__('language')%>"></i>
                 </h4>
                   </li>
                   <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                     <h4 class="h6 g-pr-20 mb-0">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/Services">Our Services</a>
-                  <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/Services"></i>
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/Services/<%=__('language')%>">Our Services</a>
+                  <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/Services/<%=__('language')%>"></i>
                 </h4>
                   </li>
                   <li class="g-pos-rel g-py-10">
                     <h4 class="h6 g-pr-20 mb-0">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact">Contact Us</a>
-                  <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/contact"></i>
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact/<%=__('language')%>">Contact Us</a>
+                  <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/contact/<%=__('language')%>"></i>
                 </h4>
                   </li>
                 </ul>

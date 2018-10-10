@@ -50,28 +50,45 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.get('/en', function(req, res) {
+app.get('/EN', function(req, res) {
     req.setLocale('en');
     res.render('index');
 });
 
-app.get('/contact', function(req, res) {
-    res.render('pages/contact');
-});
-
-app.get('/about', function(req, res) {
-    res.render('pages/about');
-});
-
-app.get('/Services', function(req, res) {
-    res.render('pages/Services');
-});
-
-app.get('/it', function(req, res) {
+app.get('/IT', function(req, res) {
     req.setLocale('it');
     res.render('index');
 });
 
+app.get('/about/IT', function(req, res) {
+    req.setLocale('it');
+    res.render('pages/about');
+});
+
+app.get('/about/EN', function(req, res) {
+    req.setLocale('en');
+    res.render('pages/about');
+});
+
+app.get('/Services/IT', function(req, res) {
+    req.setLocale('it');
+    res.render('pages/Services');
+});
+
+app.get('/Services/EN', function(req, res) {
+    req.setLocale('en');
+    res.render('pages/Services');
+});
+
+app.get('/contact/IT', function(req, res) {
+    req.setLocale('it');
+    res.render('pages/contact');
+});
+
+app.get('/contact/EN', function(req, res) {
+    req.setLocale('en');
+    res.render('pages/contact');
+});
 
 
 /////////////////////////////////////////////
