@@ -17708,7 +17708,7 @@ body.u-main-nav--push-left.u-main-nav--overlay-opened .u-main-nav__overlay {
 /* Override vendor stylesheets */
 .hamburger-inner::before,
 .hamburger-inner::after {
-  background-color: inherit; }
+  background-color: white; }
 
 [class*="u-main-nav-"] .dropdown-toggle::after {
   width: auto;
@@ -21231,7 +21231,7 @@ img.u-block-hover__main--magnifier-top-left {
 .u-header__section--light .hamburger-inner,
 .u-header__section--light .hamburger-inner::after,
 .u-header__section--light .hamburger-inner::before {
-  background: #555; }
+  background: #fff; }
 
 .u-header__section--dark .hamburger-inner,
 .u-header__section--dark .hamburger-inner::after,

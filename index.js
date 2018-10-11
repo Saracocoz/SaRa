@@ -42,21 +42,17 @@ app.use(i18n.init);
 ///////////////// APP.INIT //////////////////
 /////////////////////////////////////////////
 
-app.get('/casa', function(req, res) {
-    res.send('ciao sara');
-});
-
 app.get('/', function(req, res) {
-    res.render('index');
-});
-
-app.get('/EN', function(req, res) {
-    req.setLocale('en');
     res.render('index');
 });
 
 app.get('/IT', function(req, res) {
     req.setLocale('it');
+    res.render('index');
+});
+
+app.get('/EN', function(req, res) {
+    req.setLocale('en');
     res.render('index');
 });
 
