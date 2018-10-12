@@ -80,12 +80,6 @@
                           <li>
                             <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="/contact/IT">Italiano</a>
                           </li>
-                          <li>
-                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">Russian</a>
-                          </li>
-                          <li>
-                            <a class="d-block g-color-white g-color-blue--hover g-text-underline--none--hover g-py-5 g-px-20" href="#!">German</a>
-                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -95,9 +89,9 @@
             </div>
             <!-- End Top Bar -->
 
-            <div class="u-header__section g-bg-black-opacity-0_7 g-transition-0_3 g-py-7 g-py-3--md"
-                 data-header-fix-moment-exclude="g-bg-black-opacity-0_7 g-py-3--md"
-                 data-header-fix-moment-exclude="g-bg-black-opacity-0_7 g-py-3--md">
+            <div class="u-header__section g-bg-black-opacity-0_8 g-transition-0_3 g-py-7 g-py-3--md"
+                 data-header-fix-moment-exclude="g-bg-black-opacity-0_8 g-py-3--md"
+                 data-header-fix-moment-exclude="g-bg-black-opacity-0_8 g-py-3--md">
            <nav class="navbar navbar-expand-lg g-py-0">
              <div class="container g-pos-rel">
                <!-- Logo -->
@@ -136,7 +130,7 @@
                     data-target="#navBar">
               <span class="hamburger hamburger--slider">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                  <span class="g-bg-white hamburger-inner"></span>
                 </span>
               </span>
             </button>
@@ -167,8 +161,8 @@
       <div class="row g-mb-20">
         <div class="col-lg-3 g-mb-50">
           <!-- Heading -->
-          <h2 class="h1 g-color-black g-font-weight-700 mb-4"> CONTACT US </h2>
-          <p class="g-font-size-18 mb-0"> You will be contacted and forwarded in our reality  </p>
+          <h2 class="h1 g-color-black g-font-weight-700 mb-4"> <%=__('contact_title')%> </h2>
+          <p class="g-font-size-18 mb-0"> <%=__('contact_sub')%>  </p>
           <!-- End Heading -->
         </div>
         <div class="col-lg-3 align-self-end ml-auto g-mb-50">
@@ -179,8 +173,8 @@
                 </span>
             </div>
             <div class="media-body align-self-center">
-              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> Office number </h3>
-              <p class="mb-0">+34 930 130237 <br> <a style="color:white"> a </a></p>
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=__('office_number')%> </h3>
+              <p class="mb-0"> <%=__('number1')%> <br> <a style="color:white"> a </a></p>
             </div>
           </div>
         </div>
@@ -192,8 +186,8 @@
                 </span>
             </div>
             <div class="media-body align-self-center">
-              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> Personal number </h3>
-              <p class="mb-0">+34 651 850803<br> <a style="color:white"> a </a></p>
+              <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0"> <%=__('personal_number')%> </h3>
+              <p class="mb-0"> <%=__('number2')%> <br> <a style="color:white"> a </a></p>
             </div>
           </div>
         </div>
@@ -237,14 +231,14 @@
 
             <div class="g-mb-20 form-group">
               <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_phone')%> </label>
-              <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="+ (01) 222 33 44" name="phone">
+              <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus rounded-3 g-py-13 g-px-15" type="tel" placeholder="<%=__('form_field4')%>" name="phone">
             </div>
 
         </div>
         <div class="col-md-7">
           <div class="g-mb-40 form-group">
             <label class="g-color-gray-dark-v2 g-font-size-13"> <%=__('form_msg')%> </label>
-            <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="12" placeholder="<%=__('form_field4')%>" name="msg"></textarea>
+            <textarea class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--focus g-resize-none rounded-3 g-py-13 g-px-15" rows="12" placeholder="<%=__('form_field5')%>" name="msg"></textarea>
           </div>
 
 
@@ -272,10 +266,10 @@
             <!-- Footer Content -->
             <div class="col-lg-6 col-md-24 g-mb-40 g-mb-0--lg">
               <div class="u-heading-v2-3--bottom g-brd-white g-mb-20">
-                <h2 class="u-heading-v2__title h6 text-uppercase mb-0 g-color-white">About Us</h2>
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0 g-color-white"> <%=__('foot_about')%> </h2>
               </div>
 
-              <p class="g-color-white-opacity-0_5">Ethics is our leitmotiv that is declined in all its forms and whose evidence can be found in the commitment that we deepen in favor of customers, in the solid relationship we create and in the highest level of professionalism offered.</p>
+              <p class="g-color-white-opacity-0_5"> <%=__('foot_aboutinfo')%> </p>
             </div>
             <!-- End Footer Content -->
 
@@ -283,26 +277,26 @@
             <!-- Footer Content -->
             <div class="col-lg-2 col-md-20 g-mb-40 g-mb-0--lg">
               <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
-                <h2 class="u-heading-v2__title h6 text-uppercase mb-0 g-color-white">Useful Links</h2>
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0 g-color-white"> <%=__('foot_link')%> </h2>
               </div>
 
               <nav class="text-uppercase1">
                 <ul class="list-unstyled g-mt-minus-10 mb-0">
                   <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-20">
                     <h4 class="h6 g-pr-20 mb-0">
-                  <a class="g-color-white-opacity-0_8 " href="/about/<%=__('language')%>">About Us</a>
+                  <a class="g-color-white-opacity-0_8 " href="/about/<%=__('language')%>"> <%=__('foot_link1')%> </a>
                   <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/about/<%=__('language')%>"></i>
                 </h4>
                   </li>
                   <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                     <h4 class="h6 g-pr-20 mb-0">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/Services/<%=__('language')%>">Our Services</a>
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/Services/<%=__('language')%>"> <%=__('foot_link2')%> </a>
                   <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/Services/<%=__('language')%>"></i>
                 </h4>
                   </li>
                   <li class="g-pos-rel g-py-10">
                     <h4 class="h6 g-pr-20 mb-0">
-                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact/<%=__('language')%>">Contact Us</a>
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/contact/<%=__('language')%>"> <%=__('foot_link3')%> </a>
                   <i class="fa fa-angle-right g-absolute-centered--y g-right-0" href="/contact/<%=__('language')%>"></i>
                 </h4>
                   </li>
@@ -314,7 +308,7 @@
             <!-- Footer Content -->
             <div class="col-lg-4 col-md-6">
               <div class="u-heading-v2-3--bottom g-brd-white g-mb-20">
-                <h2 class="u-heading-v2__title h6 text-uppercase mb-0 g-color-white">Our Contacts</h2>
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0 g-color-white"> <%=__('foot_contact')%> </h2>
               </div>
 
               <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url(assets/img/maps/map2.png);">
@@ -325,7 +319,7 @@
                   <i class="fa fa-map-marker"></i>
                 </span>
               </div>
-              <p class="mb-0 g-color-white-opacity-0_8">Rambla de Cataluña 105<br> Barcelona, Spagna</p>
+              <p class="mb-0 g-color-white-opacity-0_8"> <%=__('foot_street1')%> <br> <%=__('foot_street2')%> </p>
             </div>
             <!-- End Location -->
 
@@ -336,7 +330,7 @@
                   <i class="fa fa-phone"></i>
                 </span>
               </div>
-              <p class="mb-0 g-color-white-opacity-0_8">+34 930 130237 <br> +34 651 850803</p>
+              <p class="mb-0 g-color-white-opacity-0_8"> <%=__('foot_number1')%> <br> <%=__('foot_number2')%> </p>
             </div>
             <!-- End Phone -->
 
