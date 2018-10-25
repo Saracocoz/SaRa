@@ -114,8 +114,8 @@ app.post('/contactForm', function(req, res) {
     // setup e-mail data with unicode symbols
     var mailOptions = {
         from: req.body.email, // sender address
-        to: "info@saraholdingtrust.com", // list of receivers
-        subject: "Massaggio da saraholdingtrust.it", // Subject line
+        to: "info@saraholdingtrustinc.com", // list of receivers
+        subject: "Massaggio da saraholdingtrustinc.it", // Subject line
         html: '<p><b>Nome</b>: ' + req.body.name + ' <br> <b>Email</b>: ' + req.body.email +' <br> <b>Phone</b>: ' + req.body.phone +' <br> <b>Messaggio</b>: ' + messaggio + '<p> <p>Mail generata da SaRa.it</p>'
     };
 
