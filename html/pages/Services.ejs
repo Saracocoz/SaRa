@@ -172,18 +172,17 @@
         <h2 class="h3 g-color-black g-font-weight-600 text-uppercase mb-0"> <%=__('service_our')%> </h2>
         <span class="d-block g-color-blue g-font-weight-300 g-font-size-20 g-mb-30"></span>
         <div class="row">
-          <div class="col-md-4 g-mb-30 g-mb-0--md">
+          <div class="col-md-4 g-mb-10 g-mb-0--md d-flex align-self-center" style="padding: 40px;">
             <!-- Icon Blocks -->
-            <div class="g-bg-gray-light-v4 g-color-black text-center g-rounded-10 g-py-25">
-              <i class="d-block display-2 g-line-height-1 icon-finance-253 g-mb-10"></i>
-              <span class="g-font-weight-700 text-uppercase"> <%=__('service_company')%> </span>
+            <div class="u-icon-v2 u-icon-size--2xl g-brd-4 g-color-blue g-brd-blue--hover g-rounded-50x">
+              <i class="icon-finance-253 g-mb-10"></i>
             </div>
             <!-- Icon Blocks -->
           </div>
+
           <div class="col-md-8">
             <!-- Icon Blocks Info -->
             <p class="g-font-size-18"> <%=__('service_info')%>  </p>
-
             <!-- End Icon Blocks Info -->
           </div>
         </div>
@@ -194,7 +193,7 @@
         <div class="align-self-end ml-auto g-mb-15">
           <div class="media g-mb-2">
             <div class="d-flex align-self-center">
-              <span class="u-icon-v3 g-bg-gray-light-v4 g-color-black g-rounded-10">
+              <span class="u-icon-v2 u-icon-size--2s g-brd-2 g-color-blue g-brd-blue--hover g-rounded-50x">
                   <i class="g-font-size-16 icon-finance-226 u-line-icon-pro u-line-icon-pro u-line-icon-pro"></i>
               </span>
             </div>
@@ -208,7 +207,7 @@
         <div class="align-self-end ml-auto g-mb-15">
           <div class="media g-mb-2">
             <div class="d-flex align-self-center">
-              <span class="u-icon-v3 g-bg-gray-light-v4 g-color-black g-rounded-10">
+              <span class="u-icon-v2 u-icon-size--2s g-brd-2 g-color-blue g-brd-blue--hover g-rounded-50x">
                   <i class="g-font-size-16 icon-finance-145 u-line-icon-pro u-line-icon-pro"></i>
               </span>
             </div>
@@ -222,7 +221,7 @@
         <div class="align-self-end ml-auto g-mb-15">
           <div class="media g-mb-2">
             <div class="d-flex align-self-center">
-              <span class="u-icon-v3 g-bg-gray-light-v4 g-color-black g-rounded-10">
+              <span class="u-icon-v2 u-icon-size--2s g-brd-2 g-color-blue g-brd-blue--hover g-rounded-50x">
                   <i class="g-font-size-16 icon-education-126 u-line-icon-pro u-line-icon-pro u-line-icon-pro"></i>
               </span>
             </div>
@@ -236,7 +235,7 @@
         <div class="align-self-end ml-auto g-mb-15">
           <div class="media g-mb-20">
             <div class="d-flex align-self-center">
-              <span class="u-icon-v3 g-bg-gray-light-v4 g-color-black g-rounded-10">
+              <span class="u-icon-v2 u-icon-size--2s g-brd-2 g-color-blue g-brd-blue--hover g-rounded-50x">
                   <i class="g-font-size-16 icon-finance-211 u-line-icon-pro u-line-icon-pro u-line-icon-pro"></i>
               </span>
             </div>
@@ -253,24 +252,30 @@
   <!-- end service Block -->
 </section>
 
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
+      <!-- Parallax Image -->
+      <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_5--after" style="height: 130%; background-image: url(../assets/img/immagini/boxslider-bg-slide1n.jpg);"></div>
+      <!-- End Parallax Image -->
 
-    <!-- Services -->
-    <div id="services-section" class=" g-py-145" style="background-color:#e1e5e7">
+      <!-- Promo Block Content -->
+      <div class="container g-color-black text-center g-py-100">
+        <h3 class="h1 g-font-weight-600 text-uppercase mb-2" style="color:white"> <%=__('service_withus')%>  </h3>
+      </div>
       <div class="container">
         <!-- Heading -->
         <div class="g-max-width-800 text-center mx-auto g-mb-70">
-          <h2 class="text-uppercase g-color-main-light-v1 g-font-weight-600 g-font-size-22 g-letter-spacing-2 mb-4"> <%=__('service_withus')%> </h2>
-          <h2 class="h3 mb-5"> <%=__('service_withus1')%> <br> <%=__('service_withus2')%>  <a href="/contact/<%=__('language')%>"> <%=__('service_form')%>  <a> <br><br> <%=__('service_withus3')%> </h2>
+          <h2 class="h3 mb-5 g-color-white-opacity-0_8"> <%=__('service_withus1')%> <br> <%=__('service_withus2')%>  <a href="/contact/<%=__('language')%>" class="g-color-blue"> <%=__('service_form')%>  <a> <br><br> <%=__('service_withus3')%> </h2>
         </div>
         <!-- End Heading -->
 
 
-        <div class="text-center">
-          <a class="btn u-btn-outline-blue g-font-weight-600 g-font-size-12 g-rounded-30 g-py-15 g-px-35" href="/contact/<%=__('language')%>"> <%=__('service_contact')%>  </a>
+        <div class="text-center g-py-65">
+          <a class="btn u-btn-outline-blue g-font-weight-600 g-font-size-16 g-rounded-30 g-py-15 g-px-35" href="/contact/<%=__('language')%>"> <%=__('service_contact')%>  </a>
         </div>
       </div>
-    </div>
-    <!-- End Services -->
+      <!-- Promo Block Content -->
+    </section>
+
 
     <!-- Footer -->
       <div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white g-py-30">
