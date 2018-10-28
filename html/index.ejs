@@ -155,58 +155,62 @@
     </section>
     <!-- End Promo Block -->
 
+
     <!-- intro -->
-    <div class=" g-max-width-600 mx-auto u-heading-v2-2--bottom g-brd-blue g-mb-10 text-center g-py-50">
-      <h4 class="u-heading-v2__title mb-0"> <%=__('home_intro')%> </h4>
+    <div class=" g-max-width-800 mx-auto  g-brd-blue g-mb-10 text-center g-py-45">
+      <h4 class="u-heading-v2__title mb-0 g-font-size-16 "> <%=__('home_intro')%> </h4>
     </div>
     <!-- End intro -->
 
+    <hr class="u-divider-linear-gradient u-divider-linear-gradient--gray-light-v2 g-my-20 g-brd-blue g-mb-40">
 
     <!-- About Our Company -->
-<div class="dzsparallaxer auto-init height-is-based-on-content use-loading" data-options="{
-      settings_mode_oneelement_max_offset: '150'
-     }">
-  <!-- Parallax Image -->
-  <div class="divimage dzsparallaxer--target w-100" style="height: 160%; background-image: url(/assets/img/mountainbg.jpg)"></div>
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "fromtop", animation_duration: 25, direction: "reverse"}'>
+      <!-- Parallax Image -->
+      <div class="divimage dzsparallaxer--target w-100 u-bg-overlay " style="height: 130%; background-image: url(/assets/img/mountainbg.jpg);"></div>
+      <!-- End Parallax Image -->
 
-  <section class="g-flex-centered  g-color-white u-bg-overlay g-bg-white-opacity-0_2--after g-py-20">
-    <div class="container u-bg-overlay__inner">
-      <div class="row">
-        <div class="row">
-          <div class="col-lg-6 align-self-center g-mb-100 g-mb-0--lg mt-auto" style="padding-left: 15px;">
-            <header class="u-heading-v2-3--bottom g-brd-blue g-mb-20">
-              <h2 class="h4 u-heading-v2__title g-color-gray-dark-v2 g-font-weight-600 text-uppercase" style="padding: 10px;"> <%=__('home_about')%> </h2>
-            </header>
+      <!-- Promo Block Content -->
 
-            <p class="g-font-size-16 g-mb-30" style="padding: 10px;"> <%=__('home_aboutsub')%> </p>
+      <section class="g-flex-centered  g-color-white u-bg-overlay g-bg-white-opacity-0_2--after g-py-20">
+        <div class="container u-bg-overlay__inner">
+          <div class="row">
+            <div class="row">
+              <div class="col-lg-6 align-self-center g-mb-100 g-mb-0--lg mt-auto" style="padding-left: 15px;">
+                <header class="u-heading-v2-3--bottom g-brd-blue g-mb-20">
+                  <h2 class="h4 u-heading-v2__title g-color-gray-dark-v2 g-font-weight-600 text-uppercase" style="padding: 10px;"> <%=__('home_about')%> </h2>
+                </header>
 
-            <ul class="list-unstyled g-color-gray-dark-v4 mb-0" style="padding: 10px;">
-              <li class="d-flex g-mb-10">
-                <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point1')%>
-              </li>
-              <li class="d-flex g-mb-10">
-                <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point2')%>
-              </li>
-              <li class="d-flex g-mb-10">
-                <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point3')%>
-              </li>
-              <li class="d-flex g-mb-10">
-                <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point4')%>
-              </li>
-            </ul>
-          </div>
+                <p class="g-font-size-16 g-mb-30" style="padding: 10px;"> <%=__('home_aboutsub')%> </p>
 
-          <div class="col-lg-6 g-bg-img-hero g-pos-rel" style="background-image: url(assets/img/maps/map4.png);">
-            <div class="g-absolute-centered text-center w-100 g-px-40">
-              <h2 class="h1 g-color-gray-v2 g-font-weight-600 g-font-size-22 g-font-size-36--md g-mb-20"> <%=__('home_esperienza1')%> <br> <%=__('home_esperienza2')%> </h2>
-                  <a href="/about/<%=__('language')%>" class="h1 g-color-gray-v2  g-font-size-18 g-color-blue--hover"> <%=__('home_read')%> </a>
+                <ul class="list-unstyled g-color-gray-dark-v4 mb-0" style="padding: 10px;">
+                  <li class="d-flex g-mb-10">
+                    <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point1')%>
+                  </li>
+                  <li class="d-flex g-mb-10">
+                    <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point2')%>
+                  </li>
+                  <li class="d-flex g-mb-10">
+                    <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point3')%>
+                  </li>
+                  <li class="d-flex g-mb-10">
+                    <i class="icon-check g-color-blue g-mt-5 g-mr-10"></i> <%=__('home_point4')%>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 g-bg-img-hero g-pos-rel g-mb-100 g-mb-0--lg" style="background-image: url(assets/img/maps/map4.png);">
+                <div class="g-absolute-centered text-center w-100 g-px-40">
+                  <h2 class="h1 g-color-gray-v2 g-font-weight-600 g-font-size-22 g-font-size-36--md g-mb-20"> <%=__('home_esperienza1')%> <br> <%=__('home_esperienza2')%> </h2>
+                  <a href="/about/<%=__('language')%>" class="h1 g-color-gray-v2 g-font-size-16 g-font-size-20--md g-mb-20 g-color-blue--hover"> <%=__('home_read')%> </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</div>
+      </section>
+      <!-- Promo Block Content -->
+    </section>
     <!-- End About Our Company -->
 
 
